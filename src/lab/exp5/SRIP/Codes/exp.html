@@ -64,16 +64,80 @@ left:765px;
   	border: none;
   	border-radius: 15px;
   	box-shadow: 0 9px #999;
-	margin-left:50px;
+	margin-left:115px;
         }
 
-.button1:hover {background-color: #3e8e41}
 
 .button1:active {
   	background-color: #3e8e41;
-  	box-shadow: 0 5px #666;
+  	box-shadow: 0 5px #000;
   	transform: translateY(4px);
 	}
+.button2 {
+  	display: inline-block;
+  	padding: 15px 25px;
+  	font-size: 22px;
+  	cursor: pointer;
+  	text-align: center;
+  	background-image:linear-gradient(to right,#677BD7,#7DE6E5);
+  	border: none;
+  	border-radius: 15px;
+  	box-shadow: 0 9px #999;
+	margin-left:475px;
+        }
+
+
+.button2:active {
+  	background-color: #3e8e41;
+  	box-shadow: 0 5px #000;
+  	transform: translateY(4px);
+	}
+.tube {
+  margin-left:250px;
+  
+  height: 250px;
+  width: 30px;
+  position: relative;
+  overflow: hide;
+  background: linear-gradient(90deg, rgba(228, 225, 222, 0.3) 0%, rgba(216, 212, 208, 0.3) 0%, rgba(203, 198, 193, 0.3) 0%, rgba(188, 184, 179, 0.3) 6.79%, rgba(166, 162, 159, 0.3) 14.61%, rgba(216, 217, 217, 0.3) 48.07%, rgba(223, 224, 225, 0.3) 52.25%, rgba(210, 210, 210, 0.3) 62.52%, rgba(176, 173, 171, 0.3) 82.19%, rgba(166, 162, 159, 0.3) 87.64%, rgba(208, 210, 211, 0.3) 100%, rgba(166, 168, 171, 0.3) 100%);
+  border-radius:0px 0px 40px 40px/0 0 50px 50px;;
+}
+.tube:before, .tube__outer-glass {
+  border-radius: 0px 0px 40px 40px/0 0 50px 50px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: linear-gradient(90deg, rgba(174, 208, 237, 0.3) 0%, rgba(166, 204, 235, 0.3) 50%, rgba(81, 168, 220, 0.3) 100%);
+}
+.tube__top {
+  border: 3px solid #d8ebf6;
+  background: linear-gradient(to bottom, #a7d3ec 50%, #98bcde 51%, #98bcde 100%);
+  position: absolute;
+  top: -6px;
+  border-radius: 50% / 100%;
+  height: 2.5px;
+  width: 30px;
+  left: -3px;
+}
+.tube__contents {
+  border-radius: 0px 0px 40px 40px/0 0 50px 50px;
+  background:#000;
+  width: 25px;
+  height: 80%;
+  left: 3px;
+  position: absolute;
+  bottom: 3px;
+}
+.tube__contents:before {
+  content: '';
+  background: linear-gradient(to bottom, rgba(156, 82, 22, 0.5) 50%, rgba(156, 82, 22, 0.9) 51%, rgba(156, 82, 22, 0.9) 100%);
+  position: absolute;
+  top: -1px;
+  border-radius: 50% / 100%;
+  height: 1px;
+  width: 25px;
+}
 
 </style>
 
@@ -89,8 +153,19 @@ left:765px;
     
     <br>
     <button class="button">Sample</button>
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    <button class="button1">Load Sample</button>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button class="button1">Load</button><br><br> 
+    <button class="button2">Start</button>
+<button class="button2">Plot</button>
+  <div class="tube">
+  <div class="tube__top"></div>
+  <div class="tube__contents"></div>
+  <div class="tube__outer-glass"></div>
+   </div>
+  
+ 
+
+     
 
  </div>
 </div>
