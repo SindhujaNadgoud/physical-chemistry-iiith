@@ -93,8 +93,8 @@ left:765px;
   	transform: translateY(4px);
 	}
 .tube {
-  margin-left:250px;
-  height: 250px;
+  margin-left:300px;
+  height: 200px;
   width: 30px;
   position:relative;
   overflow: hide;
@@ -143,6 +143,56 @@ left:765px;
   background-color: #555;
   margin-left:100px;
 }
+    .tv {
+      position: relative;
+      width: 150px;
+      height: 50px;
+      margin: 10px 0;
+      background: grey;
+      border-radius: 50% / 10%;
+      margin-left:60px;
+      color: white;
+      text-align: center;
+      text-indent: .1em;
+      
+      
+    }
+    .tv:before {
+      content: '';
+      position: absolute;
+      top: 10%;
+      bottom: 10%;
+      right: -5%;
+      left: -5%;
+      background: inherit;
+      border-radius: 5% / 50%;
+      margin-left:70px;
+    }
+    .tv1 {
+      position: relative;
+      width: 150px;
+      height: 50px;
+      margin: 10px 0;
+      background: grey;
+      border-radius: 50% / 10%;
+      margin-left:200px;
+      color: white;
+      text-align: center;
+      text-indent: .1em;
+      
+      
+    }
+    .tv1:before {
+      content: '';
+      position: absolute;
+      top: 10%;
+      bottom: 10%;
+      right: -5%;
+      left: -5%;
+      background: inherit;
+      border-radius: 5% / 50%;
+      margin-left:70px;
+    }
 
 </style>
 
@@ -159,15 +209,59 @@ left:765px;
     <br>
     <button class="button">Sample</button>
     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    <button class="button1">Load</button><br><br> 
-    <button class="button2">Start</button><br><br>
-<button class="button2">Plot</button>
-  <div class="tube">
-  <div class="tube__top"></div>
-  <div class="tube__contents"></div>
-  <div class="tube__outer-glass"></div>
-   </div><br><br><br>
-   <div class="rectangle"/>              <div class="rectangle"/>
+    <div class="button1" >Load</div><br><br> 
+    <div class="button2" >Start</div><br><br>
+    <div class="button2"  >Plot</div>
+    <div class="tube"  >
+     <div class="tube__top"></div>
+     <div class="tube__contents"></div>
+     <div class="tube__outer-glass"></div>
+     <div class="button2"  >Plot</div>
+   </div>
+
+
+   
+    
+   
+
+  <br><br><br>
+   <!---<canvas id="myCanvas" width="587" height="100" style="border:1px solid #000;"/>
+   <script type="text/javascript">
+   	var c = document.getElementById("myCanvas");
+     var ctx = c.getContext("2d");
+// Create gradient
+    var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+
+	var c1 = document.getElementById("myCanvas");
+     var ctx1 = c.getContext("2d");
+// Create gradient
+    var grd1 = ctx1.createLinearGradient(0,0,200,0);
+grd1.addColorStop(0,"red");
+grd1.addColorStop(1,"white");
+// Fill with gradient
+ctx1.fillStyle = grd;
+ctx1.fillRect(10,10,150,80);
+</script>--->
+<div class="tv" style="float: left;" ></div>
+<div class="tv1" style="float: left;"></div>
+
+
+
+
+	
+
+
+
+
+
+
+
+
   
   
  
