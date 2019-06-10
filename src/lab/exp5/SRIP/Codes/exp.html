@@ -1,5 +1,6 @@
 <html>
 
+
 <style>
 
 
@@ -45,8 +46,8 @@ left:765px;
   	border:none;
   	border-radius: 20px;
         border-color:	#006400;
-  	box-shadow: 0 10px #999;
-	margin-left:50px;
+  	
+	
         }
 
 .button:active {
@@ -193,8 +194,103 @@ left:765px;
       border-radius: 5% / 50%;
       margin-left:70px;
     }
+     .dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+.btn-group button {
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
 
 </style>
+<head>
+	<script >
+		/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+	</script>
+
+
+
+</head>
 
 
 <body>
@@ -207,16 +303,33 @@ left:765px;
    
     
     <br>
-    <button class="button">Sample</button>
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    
+    
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn" style="float: left;">Sample</button>
+  <div id="myDropdown" class="dropdown-content">
+  	<div class="btn-group">
+  <button>Acetaldehyde</button>
+  <button>Benzene</button>
+  <button>Sample3</button>
+</div>
+  </div>
+</div>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
     <div class="button1" >Load</div><br><br> 
-    <div class="button2" >Start</div><br><br>
+   <!---- <div class="btn-group" style="float: left;">
+  <button style="width:25%">Apple</button>
+  <button style="width:25%">Samsung</button>
+  <button style="width:25%">Sony</button>
+  <button style="width:25%">HTC</button></div>---->
+
+    <div class="button2"  >Start</div><br><br>
     <div class="button2"  >Plot</div>
     <div class="tube"  >
      <div class="tube__top"></div>
      <div class="tube__contents"></div>
      <div class="tube__outer-glass"></div>
-     <div class="button2"  >Plot</div>
+     
    </div>
 
 
@@ -225,50 +338,10 @@ left:765px;
    
 
   <br><br><br>
-   <!---<canvas id="myCanvas" width="587" height="100" style="border:1px solid #000;"/>
-   <script type="text/javascript">
-   	var c = document.getElementById("myCanvas");
-     var ctx = c.getContext("2d");
-// Create gradient
-    var grd = ctx.createLinearGradient(0,0,200,0);
-grd.addColorStop(0,"red");
-grd.addColorStop(1,"white");
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.fillRect(10,10,150,80);
-
-	var c1 = document.getElementById("myCanvas");
-     var ctx1 = c.getContext("2d");
-// Create gradient
-    var grd1 = ctx1.createLinearGradient(0,0,200,0);
-grd1.addColorStop(0,"red");
-grd1.addColorStop(1,"white");
-// Fill with gradient
-ctx1.fillStyle = grd;
-ctx1.fillRect(10,10,150,80);
-</script>--->
+   
 <div class="tv" style="float: left;" ></div>
 <div class="tv1" style="float: left;"></div>
-
-
-
-
-	
-
-
-
-
-
-
-
-
-  
-  
- 
-
-     
-
- </div>
+      </div>
 </div>
 
 
@@ -281,7 +354,7 @@ ctx1.fillRect(10,10,150,80);
   
   <div class="centered">
     
-    
+    hey!
    <div style="border-top:2.5px dotted;width:600px;"></div>
 
   </div>
