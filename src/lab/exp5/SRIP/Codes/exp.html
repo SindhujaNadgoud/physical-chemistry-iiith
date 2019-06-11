@@ -194,14 +194,17 @@ left:765px;
       border-radius: 5% / 50%;
       margin-left:70px;
     }
-     .dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
+    .dropbtn {
+  background-image: linear-gradient(to right,green,#ADFF2F);  
+  padding: 15px 25px;
+  font-size: 20 px;
   border: none;
   cursor: pointer;
   margin-left: 50px;
+  text-align: center;
+  outline:none;
+  border-radius: 20px;
+  border-color:	#006400;
 }
 
 /* Dropdown button on hover & focus */
@@ -238,6 +241,9 @@ left:765px;
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 .btn-group button {
   background-color: #4CAF50; /* Green background */
   border: 1px solid green; /* Green border */
@@ -245,6 +251,7 @@ left:765px;
   padding: 10px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   float: left; /* Float the buttons side by side */
+  margin-top: 50px;
 }
 
 .btn-group button:not(:last-child) {
@@ -300,29 +307,17 @@ window.onclick = function(event) {
 <div class="split left">
 
    <div class="centered">
-   
-    
-    <br>
-    
-    
-    <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn" style="float: left;">Sample</button>
+     <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Sample</button>
   <div id="myDropdown" class="dropdown-content">
-  	<div class="btn-group">
-  <button>Acetaldehyde</button>
-  <button>Benzene</button>
-  <button>Sample3</button>
-</div>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
   </div>
 </div>
+    
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
     <div class="button1" >Load</div><br><br> 
-   <!---- <div class="btn-group" style="float: left;">
-  <button style="width:25%">Apple</button>
-  <button style="width:25%">Samsung</button>
-  <button style="width:25%">Sony</button>
-  <button style="width:25%">HTC</button></div>---->
-
     <div class="button2"  >Start</div><br><br>
     <div class="button2"  >Plot</div>
     <div class="tube"  >
