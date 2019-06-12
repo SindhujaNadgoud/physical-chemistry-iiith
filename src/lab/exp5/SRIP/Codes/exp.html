@@ -84,7 +84,7 @@ left:765px;
   	border: none;
   	border-radius: 15px;
   	box-shadow: 0 9px #999;
-	margin-left:475px;
+	margin-left:460px;
         }
 
 
@@ -269,7 +269,17 @@ left:765px;
 .btn-group button:hover {
   background-color: #3e8e41;
 }
-
+.rectangle {
+  margin-left: 5px;
+  height: 300px;
+  width: 75px;
+  background-color: #555;
+}
+.rectangle1 {
+  height: 300px;
+  width: 75px;
+  background-color: #555;
+}
 </style>
 <head>
 	<script >
@@ -308,7 +318,7 @@ window.onclick = function(event) {
 
    <div class="centered">
      <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Sample</button>
+  <button onclick="myFunction()" class="dropbtn" style="float: left;">Sample</button>
   <div id="myDropdown" class="dropdown-content">
     <a href="#">Link 1</a>
     <a href="#">Link 2</a>
@@ -316,8 +326,8 @@ window.onclick = function(event) {
   </div>
 </div>
     
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    <div class="button1" >Load</div><br><br> 
+<!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&//nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
+    <div class="button2" style="float: center;">Load</div><br><br> 
     <div class="button2"  >Start</div><br><br>
     <div class="button2"  >Plot</div>
     <div class="tube"  >
@@ -335,7 +345,8 @@ window.onclick = function(event) {
   <br><br><br>
    
 <div class="tv" style="float: left;" ></div>
-<div class="tv1" style="float: left;"></div>
+<div class="tv1" style="float: left;"></div><br>
+<div class="button2">Evaluate</div>
       </div>
 </div>
 
@@ -347,10 +358,10 @@ window.onclick = function(event) {
 
 <div class="split right">
   
-  <div class="centered">
-    
-    hey!
-   <div style="border-top:2.5px dotted;width:600px;"></div>
+  <div class="centered" style="float: center;">
+       <div class="rectangle" style="float: left;"> NORTH </div>
+       <div class="rectangle1" style="float: right;">SOUTH </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <div style="border-top:2.5px dotted;width:600px;"></div>
 
   </div>
 
