@@ -122,7 +122,7 @@ left:765px;
 }
 .tube__contents {
   border-radius: 0px 0px 40px 40px/0 0 50px 50px;
-  background:#000;
+  
   width: 25px;
   height: 80%;
   left: 3px;
@@ -272,13 +272,17 @@ left:765px;
 .rectangle {
   margin-left: 5px;
   height: 300px;
-  width: 75px;
-  background-color: #555;
+  width: 125px;
+  background-image:linear-gradient(to right,#3353E7,#6278E0);
+  text-align: center;
+  text-indent: center;
 }
 .rectangle1 {
   height: 300px;
-  width: 75px;
-  background-color: #555;
+  width: 125px;
+  background-image:linear-gradient(to right,#0AA10E,#21DC26);
+  text-align: center;
+  text-indent: center;
 }
 </style>
 <head>
@@ -302,6 +306,11 @@ window.onclick = function(event) {
     }
   }
 }
+function Benzene() {
+
+    document.getElementById("ttcontent").color="#fff";
+}
+
 
 	</script>
 
@@ -318,11 +327,14 @@ window.onclick = function(event) {
 
    <div class="centered">
      <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn" style="float: left;">Sample</button>
+  <button  id="test"  class="dropbtn" style="float: left;" onclick="myFunction()"  >Sample</button>
   <div id="myDropdown" class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <button class="button1" onclick="Benzene()">Benzene</button>
+    <button id="Acetaldehyde" class="button1" onclick="Acetaldehyde()">Acetaldehyde</button>
+    <button id="Ethyl Acetate" class="button1" onclick="Acetate()">Ethyl Acetate</button>
+    <!---<input type="button" onclick="chBackcolor('red');">
+   <a href="#">Link 2</a>
+    <a href="#">Link 3</a>--->
   </div>
 </div>
     
@@ -332,7 +344,7 @@ window.onclick = function(event) {
     <div class="button2"  >Plot</div>
     <div class="tube"  >
      <div class="tube__top"></div>
-     <div class="tube__contents"></div>
+     <div class="tube__contents" id="ttcotent"></div>
      <div class="tube__outer-glass"></div>
      
    </div>
