@@ -303,6 +303,12 @@ left:765px;
   text-indent: center;
   margin-left:225px; 
 }
+#myContainer {
+  width: 100px;
+  height: 200px;
+  position: relative;
+  background: white;
+}
 </style>
 
 <head>
@@ -347,10 +353,10 @@ left:765px;
 </div>
     
 <!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&//nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
-    <div class="button2" style="float: center;">Load</div><br><br> 
+    <div class="button2" style="float: center;" onclick="myMove()">Load</div><br><br> 
     <div class="button2"  >Start</div><br><br>
     <div class="button2"  >Plot</div>
-    <div class="tube"  >
+    <div class="tube"  id="myAnimation">
      <div class="tube__top"></div>
      <div class="tube__contents" ></div>
      <div class="tube__outer-glass" id="ttcontent"></div>
