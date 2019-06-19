@@ -92,6 +92,24 @@ left:765px;
   	background-color: #3e8e41;
   	box-shadow: 0 5px #000;
   	transform: translateY(4px);
+	}.button3 {
+  	display: inline-block;
+  	padding: 15px 25px;
+  	font-size: 22px;
+  	cursor: pointer;
+  	text-align: center;
+  	background-image:linear-gradient(to right,#677BD7,#7DE6E5);
+  	border: none;
+  	border-radius: 15px;
+  	box-shadow: 0 9px #999;
+	margin-left:460px;
+        display: inline-block;}
+
+
+.button3:active {
+  	background-color: #3e8e41;
+  	box-shadow: 0 5px #000;
+  	transform: translateY(4px);
 	}
 .tube {
   margin-left:300px;
@@ -101,6 +119,7 @@ left:765px;
   overflow: hide;
   background: linear-gradient(90deg, rgba(228, 225, 222, 0.3) 0%, rgba(216, 212, 208, 0.3) 0%, rgba(203, 198, 193,   0.3) 0%, rgba(188, 184, 179, 0.3) 6.79%, rgba(166, 162, 159, 0.3) 14.61%, rgba(216, 217, 217, 0.3) 48.07%, rgba  (223, 224, 225, 0.3) 52.25%, rgba(210, 210, 210, 0.3) 62.52%, rgba(176, 173, 171, 0.3) 82.19%, rgba(166, 162, 159,    0.3) 87.64%, rgba(208, 210, 211, 0.3) 100%, rgba(166, 168, 171, 0.3) 100%);
   border-radius:0px 0px 40px 40px/0 0 50px 50px;
+  
 }
 .tube:before, .tube__outer-glass {
   border-radius: 0px 0px 40px 40px/0 0 50px 50px;
@@ -138,12 +157,7 @@ left:765px;
   height: 1px;
   width: 25px;
 }
-.rectangle {
-  height: 50px;
-  width: 100px;
-  background-color: #555;
-  margin-left:100px;
-}
+
     .tv {
       position: relative;
       width: 150px;
@@ -155,6 +169,7 @@ left:765px;
       color: white;
       text-align: center;
       text-indent: .1em;
+     
       
       
     }
@@ -180,6 +195,7 @@ left:765px;
       color: white;
       text-align: center;
       text-indent: .1em;
+      
       
       
     }
@@ -284,6 +300,7 @@ left:765px;
   background-image:linear-gradient(to right,#0AA10E,#21DC26);
   text-align: center;
   text-indent: center;
+ 
 }
 .square
 {
@@ -350,6 +367,27 @@ display: inline-block;
   	border-radius: 20px;
         border-color:	#006400;
 }
+
+.ball {
+    width:50px;
+    height:50px;
+    border:3px solid #900;
+    border-radius:50%;
+    background-color: #FF7F50;
+    margin-left: 200px;
+    display: inline-block;
+
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
 </style>
 
 <head>
@@ -396,7 +434,7 @@ display: inline-block;
 <!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&//nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
     <div class="button2" style="float: center;" onclick="myMove()">Load</div><br><br> 
     <div class="button2"  >Start</div><br><br>
-    <div class="button2"  >Plot</div>
+    <div class="button3"  >Plot</div>
     <div class="tube"  id="myAnimation">
      <div class="tube__top"></div>
      <div class="tube__contents" ></div>
@@ -405,10 +443,11 @@ display: inline-block;
    </div>
 
 
+
 <div class="square" style="float: left;">Frequency Generator</div>
 <div class="square1" style="float: left;">Frequency Receiver</div>
-   <br><br><br><br>
-<div class="tv" style="float: left;" ></div>
+   
+<div class="tv" style="float: left;"></div>
 <div class="tv1" style="float: left;"></div><br>
 <div class="button2">Evaluate</div>
       </div>
@@ -422,9 +461,10 @@ display: inline-block;
 
 <div class="split right">
   
-  <div class="centered" style="float: center;">
+  <div class="centered" >
        <div class="rectangle" style="float: left;"> NORTH </div>
-       <div class="rectangle1" style="float: right;">SOUTH </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <div class="ball" ><i class="right"></i></div>
+        <div class="rectangle1" style="float: right;" >SOUTH </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
        <div style="border-top:2.5px dotted;width:600px;"></div>
 
   </div>
