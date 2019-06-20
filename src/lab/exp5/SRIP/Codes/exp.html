@@ -169,7 +169,7 @@ left:765px;
       color: white;
       text-align: center;
       text-indent: .1em;
-     
+           
       
       
     }
@@ -183,6 +183,8 @@ left:765px;
       background: inherit;
       border-radius: 5% / 50%;
       margin-left:70px;
+      
+
     }
     .tv1 {
       position: relative;
@@ -195,7 +197,7 @@ left:765px;
       color: white;
       text-align: center;
       text-indent: .1em;
-      
+      display: inline-block;
       
       
     }
@@ -209,6 +211,7 @@ left:765px;
       background: inherit;
       border-radius: 5% / 50%;
       margin-left:70px;
+      display: inline-block;
     }
     .dropbtn {
   background-image: linear-gradient(to right,green,#ADFF2F);  
@@ -221,6 +224,7 @@ left:765px;
   outline:none;
   border-radius: 20px;
   border-color:	#006400;
+
 }
 
 /* Dropdown button on hover & focus */
@@ -384,9 +388,29 @@ i {
   display: inline-block;
   padding: 3px;
 }
-.right {
+.right1 {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
+}
+
+.flask
+{
+	height: 100px;
+  width: 80px;
+  background-color: 	#808080;
+  text-align: center;
+  text-indent: center;
+  margin-left:65px; 
+  display: inline-block;
+}
+.canvas
+{
+	width=315px;
+	height=300px; 
+border:2px;
+ background-color: #fff;
+ display: inline-block;
+
 }
 </style>
 
@@ -404,6 +428,8 @@ i {
     }
   }
 }
+
+
 
 	</script>
 	
@@ -446,10 +472,12 @@ i {
 
 <div class="square" style="float: left;">Frequency Generator</div>
 <div class="square1" style="float: left;">Frequency Receiver</div>
-   
+   <br><br>
 <div class="tv" style="float: left;"></div>
-<div class="tv1" style="float: left;"></div><br>
-<div class="button2">Evaluate</div>
+<div class="flask" style="float: left;"> </div>
+<div class="tv" style="float: left;"></div>
+
+<div class="button2" onclick="Evaluate()">Evaluate</div>
       </div>
 </div>
 
@@ -463,9 +491,21 @@ i {
   
   <div class="centered" >
        <div class="rectangle" style="float: left;"> NORTH </div>
-       <div class="ball" ><i class="right"></i></div>
-        <div class="rectangle1" style="float: right;" >SOUTH </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <div class="canvas" style="float: center;">
+       	<div class="ball"><i class="right1"></i></div>
+
+
+
+
+
+
+
+
+       </div>
+        <div class="rectangle1" style="float: right;" >SOUTH </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
        <div style="border-top:2.5px dotted;width:600px;"></div>
+      
+
 
   </div>
 
@@ -473,6 +513,17 @@ i {
 
 
 </div>
+<!---<script type="text/javascript">
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(100, 100, 2.5, 0, 2 * Math.PI);
+ctx.arc(90, 100, 2.5, 0, 2 * Math.PI);
+ctx.arc(70, 100, 2.5, 0, 2 * Math.PI);
+ctx.arc(45, 100, 2.5, 0, 2 * Math.PI);
+ctx.stroke();
+</script> --->
+
 
 </body>
 
