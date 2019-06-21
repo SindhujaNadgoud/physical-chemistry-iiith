@@ -5,6 +5,11 @@ function myFunction() {
 function Benzene() {
 
     document.getElementById("ttcontent").style.background="#DC143C";
+    //var x=document.getElementById("ttcontent").background;
+    i//f(x=="#DC143C")
+//{
+//window.open("https://elearn.isb.edu/tep/lms/mod/page/view.php?id=2761");
+//}
 }
 function Acetaldehyde() {
 
@@ -32,17 +37,7 @@ function myMove() {
   }
 }
 
-function Evaluate()
-{
-  if(document.getElementById("ttcontent").style.background=="#00FF00")
-    window.open("file:///C:/Desktop/GitBash/Git/SRIP/physical-chemistry-iiith/src/lab/exp5/SRIP/Codes/plot_acetaldehyde.html", ' '); 
-  else if (document.getElementById("ttcontent").style.background=="#00FF00")
-    window.open("file:///C:/Desktop/GitBash/Git/SRIP/physical-chemistry-iiith/src/lab/exp5/SRIP/Codes/plot_benzene.html", ' '); 
-  else
-    window.open("file:///C:/Desktop/GitBash/Git/SRIP/physical-chemistry-iiith/src/lab/exp5/SRIP/Codes/plot_ethylacetate.html",' ');
 
-
-}
 
 
 
