@@ -41,3 +41,23 @@ function toggletext() {
     x.style.display = "block";
   }
 }
+function myMove1()
+{
+  var x = document.getElementById("line2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "block";
+  }
+  toggletext1() 
+
+}
+function toggletext1() {
+
+  var x = document.getElementById("text2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "block";
+  }
+}
