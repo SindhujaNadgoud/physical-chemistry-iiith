@@ -17,26 +17,14 @@
     }
   }
 }
-
-
-
-	</script>
-	
-
-	
-
-
-
+</script>
+ <script language="javascript" type="text/javascript" src="jquery.js"></script> 
+    <script language="javascript" type="text/javascript" src="jquery.flot.js"></script> 
 </head>
-
-
 <body>
-
 <div style="width:1200px;height:710px;border:1px solid #000;margin-left:150px;border-width:medium 2px;">
-
 <div class="split left">
-
-   <div class="centered">
+    <div class="centered">
      <div class="dropdown">
   <button    class="dropbtn"  onclick="myFunction() "  >Sample</button>
   <div id="myDropdown" class="dropdown-content">
@@ -56,15 +44,13 @@
      <div class="tube__outer-glass" id="ttcontent"></div>
      
    </div>
-
-
-
 <div class="square" style="float: left;">Frequency Generator</div>
 <div class="square1" style="float: left;">Frequency Receiver</div>
    <br><br>
 <div class="tv" style="float: left;"></div>
 <div class="flask" style="float: left;"> </div>
 <div class="tv" style="float: left;"></div>
+<div class="canvas">
 <svg width="250px" height="80px" >
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
@@ -73,23 +59,17 @@
   </defs>
   <line x1="50" y1="50" x2="200" y2="50" stroke="#000" stroke-width="5" marker-end="url(#arrow)" id="line1" display="none"/>
   <text x="100" y="20" id="text1" display="none" >Magnetic Field</text>
-</svg>
+</svg></div>
 
 <div class="button2" onclick="Evaluate()" style="float: left;">Evaluate</div>
       </div>
 </div>
-
-
 <div style="border-left:2.5px dotted ;margin-left:600px;height:710px;width:0px;">
-
-
 </div>
-
 <div class="split right">
-  
   <div class="centered" >
        <div class="rectangle" style="float: left;"> NORTH </div>
-       <div class="canvas" style="float: center;">
+       <!---<div class="canvas" style="float: center;">
        	<div class="ball1"><i class="right1"></i></div>
  		<div class="ball2"><i class="right1"></i></div>
  		<div class="ball3"><i class="right1"></i></div><br><br>
@@ -98,7 +78,9 @@
  		<div class="ball6"><i class="right1"></i></div><br><br>
  		<div class="ball1"><i class="right1"></i></div>
  		<div class="ball2"><i class="right1"></i></div>
- 		<div class="ball3"><i class="right1"></i></div><br><br>
+ 		<div class="ball3"><i class="right1"></i></div><br><br>-->
+    
+   
  		<svg width="250px" height="80px" >
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
@@ -108,27 +90,28 @@
   <line x1="50" y1="50" x2="200" y2="50" stroke="#000" stroke-width="5" marker-end="url(#arrow)" id="line2" display="none"/>
   <text x="100" y="20" id="text2"  display="none">Magnetic Field</text>
 </svg>
-
-
-
-
-
-
-
-
-
-       </div>
-        <div class="rectangle1" style="float: right;" >SOUTH </div><br><br>
+       <!---</div>-->
+        <div class="rectangle1" style="float: right;" >SOUTH </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
        <div style="border-top:2.5px dotted;width:600px;"></div>
-      
+       <!--- <table>
+   <tbody><tr>
+   <td>
+    <div id="placeholder" style="width: 100px; height: 100px; position: relative;"><canvas width="100" height="100"></canvas><canvas width="100" height="100" style="position: absolute; left: 0px; top: 0px;"></canvas><div class="tickLabels" style="font-size:smaller;color:#545454"><div style="position:absolute;top:84px;left:87px;width:10px;text-align:center" class="tickLabel">0</div><div style="position:absolute;top:84px;left:81px;width:10px;text-align:center" class="tickLabel">1</div><div style="position:absolute;top:84px;left:75px;width:10px;text-align:center" class="tickLabel">2</div><div style="position:absolute;top:84px;left:69px;width:10px;text-align:center" class="tickLabel">3</div><div style="position:absolute;top:84px;left:63px;width:10px;text-align:center" class="tickLabel">4</div><div style="position:absolute;top:84px;left:57px;width:10px;text-align:center" class="tickLabel">5</div><div style="position:absolute;top:84px;left:51px;width:10px;text-align:center" class="tickLabel">6</div><div style="position:absolute;top:84px;left:45px;width:10px;text-align:center" class="tickLabel">7</div><div style="position:absolute;top:84px;left:39px;width:10px;text-align:center" class="tickLabel">8</div><div style="position:absolute;top:84px;left:33px;width:10px;text-align:center" class="tickLabel">9</div><div style="position:absolute;top:63px;right:74px;width:26px;text-align:right" class="tickLabel">0</div><div style="position:absolute;top:35px;right:74px;width:26px;text-align:right" class="tickLabel">500</div><div style="position:absolute;top:6px;right:74px;width:26px;text-align:right" class="tickLabel">1000</div></div><div class="legend"><div style="position: absolute; width: 74px; height: 21px; top: 13px; right: 13px; background-color: rgb(255, 255, 255); opacity: 0.85;"> </div><table style="position:absolute;top:13px;right:13px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(237,194,64);overflow:hidden"></div></div></td><td class="legendLabel"><graph>Intensity</graph></td></tr></tbody></table></div></div>  
+    </td>
+    <td>
+     
+    </td>
+    </tr>
+   </tbody></table>-->
 
 
-  </div>
-
-</div>
 
 
-</div>
+
+
+      </div>
+    </div>
+
 <!---<script type="text/javascript">
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
@@ -152,28 +135,9 @@ ctx.stroke();
 
 }
 </script>
-<script type="text/javascript" src="svgmagnetic.js"></script>
-
-
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script type="text/javascript" src="svgmagnetic.js">
+  
+</script>
+s</body>
 </html>
 

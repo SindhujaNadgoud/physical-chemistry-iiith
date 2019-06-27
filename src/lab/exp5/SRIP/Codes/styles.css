@@ -300,8 +300,9 @@ left:765px;
   background-image:linear-gradient(to right,#0AA10E,#21DC26);
   text-align: center;
   text-indent: center;
+   margin-top: 25px;
   display: inline-block;
-  margin-top: 25px;
+ 
  
 }
 .square
@@ -463,11 +464,12 @@ i {
 }
 .canvas
 {
-	width=315px;
-	height=300px; 
+	width=250px;
+	height=100px; 
 border:2px;
  background-color: #fff;
  display: inline-block;
- margin-left: 10px;
+ margin-left: 120px;
+ margin-top: 10px;
 
 }
