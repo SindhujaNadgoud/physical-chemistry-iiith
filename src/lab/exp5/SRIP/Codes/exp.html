@@ -37,7 +37,7 @@
 <!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&//nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
     <div class="button2" style="float: center;" onclick="myMove()" >Load</div><br><br> 
     <div class="button2" onclick="myMove1()" >Start</div><br><br>
-    <div class="button3"  >Plot</div>
+    <div class="button3" onclick="plot()" >Plot</div>
     <div class="tube"  id="myAnimation">
      <div class="tube__top"></div>
      <div class="tube__contents" ></div>
@@ -93,51 +93,22 @@
        <!---</div>-->
         <div class="rectangle1" style="float: right;" >SOUTH </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
        <div style="border-top:2.5px dotted;width:600px;"></div>
-       <!--- <table>
-   <tbody><tr>
-   <td>
-    <div id="placeholder" style="width: 100px; height: 100px; position: relative;"><canvas width="100" height="100"></canvas><canvas width="100" height="100" style="position: absolute; left: 0px; top: 0px;"></canvas><div class="tickLabels" style="font-size:smaller;color:#545454"><div style="position:absolute;top:84px;left:87px;width:10px;text-align:center" class="tickLabel">0</div><div style="position:absolute;top:84px;left:81px;width:10px;text-align:center" class="tickLabel">1</div><div style="position:absolute;top:84px;left:75px;width:10px;text-align:center" class="tickLabel">2</div><div style="position:absolute;top:84px;left:69px;width:10px;text-align:center" class="tickLabel">3</div><div style="position:absolute;top:84px;left:63px;width:10px;text-align:center" class="tickLabel">4</div><div style="position:absolute;top:84px;left:57px;width:10px;text-align:center" class="tickLabel">5</div><div style="position:absolute;top:84px;left:51px;width:10px;text-align:center" class="tickLabel">6</div><div style="position:absolute;top:84px;left:45px;width:10px;text-align:center" class="tickLabel">7</div><div style="position:absolute;top:84px;left:39px;width:10px;text-align:center" class="tickLabel">8</div><div style="position:absolute;top:84px;left:33px;width:10px;text-align:center" class="tickLabel">9</div><div style="position:absolute;top:63px;right:74px;width:26px;text-align:right" class="tickLabel">0</div><div style="position:absolute;top:35px;right:74px;width:26px;text-align:right" class="tickLabel">500</div><div style="position:absolute;top:6px;right:74px;width:26px;text-align:right" class="tickLabel">1000</div></div><div class="legend"><div style="position: absolute; width: 74px; height: 21px; top: 13px; right: 13px; background-color: rgb(255, 255, 255); opacity: 0.85;"> </div><table style="position:absolute;top:13px;right:13px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(237,194,64);overflow:hidden"></div></div></td><td class="legendLabel"><graph>Intensity</graph></td></tr></tbody></table></div></div>  
-    </td>
-    <td>
-     
-    </td>
-    </tr>
-   </tbody></table>-->
-
-
+       <div id="chartContainer" style="height: 300px; width: 100%;" display="block"></div>
 
 
 
 
       </div>
     </div>
+<script type="text/javascript" src="charts.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"> 
 
-<!---<script type="text/javascript">
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.beginPath();
-ctx.arc(100, 100, 2.5, 0, 2 * Math.PI);
-ctx.arc(90, 100, 2.5, 0, 2 * Math.PI);
-ctx.arc(70, 100, 2.5, 0, 2 * Math.PI);
-ctx.arc(45, 100, 2.5, 0, 2 * Math.PI);
-ctx.stroke();
-</script> --->
-<script type="text/javascript">
-	function Evaluate()
-{
-  if(document.getElementById("ttcontent").background=="#DC143C")
-    window.open("../../plot_benzene.html", ' '); 
-  else if (document.getElementById("ttcontent").background=="#00FF00")
-    window.open("../../plot_acetaldehyde.html", ' '); 
-  else
-    window.open("../../plot_ethylacetate.html",' ');
-
-
-}
 </script>
+
+
 <script type="text/javascript" src="svgmagnetic.js">
   
 </script>
-s</body>
+</body>
 </html>
 
