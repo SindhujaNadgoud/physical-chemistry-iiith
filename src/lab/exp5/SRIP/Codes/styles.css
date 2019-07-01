@@ -445,11 +445,19 @@ i {
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 3px;
+  padding: 4px;
 }
 .right1 {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
+  transform-origin:90%  ;
+  position: absolute;
+  animation:rotate 3s linear infinite;
+  display: inline-block;
+}
+right1:before { content:''; position:absolute; height:100%; width:100%;  animation:rotate 3s linear reverse infinite;
+display: inline-block; }
+@keyframes rotate { 100% { transform:rotate(-360deg); } 
 }
 
 .flask
@@ -464,12 +472,12 @@ i {
 }
 .canvas
 {
-	width=250px;
+	width=100px;
 	height=100px; 
 border:2px;
  background-color: #fff;
  display: inline-block;
- margin-left: 120px;
+ margin-left: 10px;
  margin-top: 10px;
 
 }
@@ -479,3 +487,19 @@ border:2px;
 {
   display: none;
 }
+
+.sun{
+    width:5px;
+    height:10px;
+    position:absolute;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-name:orbit;
+    -webkit-animation-duration:5s;
+    top:50px;
+    left:50px;
+}
+
+@-webkit-keyframes orbit { 
+from { -webkit-transform:rotate(30deg) } 
+to { -webkit-transform:rotate(360deg) } }

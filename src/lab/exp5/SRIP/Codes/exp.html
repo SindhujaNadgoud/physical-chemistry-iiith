@@ -34,7 +34,7 @@
   </div>
 </div>
     
-<!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&//nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-->
+
     <div class="button2" style="float: center;" onclick="myMove()" >Load</div><br><br> 
     <div class="button2" onclick="myMove1()" >Start</div><br><br>
     <div class="button3" onclick="plot()" >Plot</div>
@@ -61,7 +61,7 @@
 </svg>
 </div><!---for canvas-->
 
-<div class="button2" onclick="otherpage()" style="float: left;">Evaluate</div>
+<div class="button2" onclick="otherpage()" >Evaluate</div>
 </div>
 </div>
 <div style="border-left:2.5px dotted ;margin-left:600px;height:710px;width:0px;">
@@ -69,7 +69,7 @@
 <div class="split right">
   <div class="centered" >
        <div class="rectangle" style="float: left;"> NORTH </div>
-       <!---<div class="canvas" style="float: center;">
+      <div class="canvas" style="float: center;">
        	<div class="ball1"><i class="right1"></i></div>
  		<div class="ball2"><i class="right1"></i></div>
  		<div class="ball3"><i class="right1"></i></div><br><br>
@@ -78,7 +78,7 @@
  		<div class="ball6"><i class="right1"></i></div><br><br>
  		<div class="ball1"><i class="right1"></i></div>
  		<div class="ball2"><i class="right1"></i></div>
- 		<div class="ball3"><i class="right1"></i></div><br><br>-->
+ 		<div class="ball3"><i class="right1"></i></div><br><br>
     
    
  		<svg width="250px" height="80px" >
@@ -90,8 +90,8 @@
   <line x1="50" y1="50" x2="200" y2="50" stroke="#000" stroke-width="5" marker-end="url(#arrow)" id="line2" display="none"/>
   <text x="100" y="20" id="text2"  display="none">Magnetic Field</text>
 </svg>
-       <!---</div>-->
-        <div class="rectangle1" style="float: right;" >SOUTH </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       </div>
+        <div class="rectangle1" style="float: right;" >SOUTH </div>
        <div style="border-top:2.5px dotted;width:600px;"></div>
        <div id="chartContainer" style="height: 350px; width: 100%;" ></div>
 
@@ -101,23 +101,10 @@
 
       </div>
     </div>
-   
+<script type="text/javascript" src="svgmagnetic.js"></script>   
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <script type="text/javascript" src="charts.js"></script>
-<script type="text/javascript" src="svgmagnetic.js"></script>
-<script type="text/javascript"> 
-    function otherpage()
-{
-  if(document.getElementById("ttcontent").style.background=="#DC143C")
-    window.open("../../plot_benzene.html");
-  else if (document.getElementById("ttcontent").style.background=="#00FF00")
-    window.open("../../plot_acetaldehyde.html", ' '); 
-  else 
-    window.open("../../plot_ethylacetate.html",' ');
 
-
-}
-</script>
 
 </body>
 </html>
