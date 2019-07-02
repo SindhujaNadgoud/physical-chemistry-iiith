@@ -19,18 +19,18 @@
   }
 }
 </script>
- 
+ <script type="text/javascript"> var value=0;</script>
 </head>
 <body>
 <div style="width:1200px;height:710px;border:1px solid #000;margin-left:150px;border-width:medium 2px;">
 <div class="split left">
     <div class="centered">
      <div class="dropdown">
-  <button    class="dropbtn"  onclick="myFunction() "  >Sample</button>
+  <button    class="dropbtn"  onclick="myFunction()" id="sample"  >Sample</button>
   <div id="myDropdown" class="dropdown-content">
-    <button onclick="Benzene()" class="Benzene" style="float: left;">Benzene</button>
-    <button onclick="Acetaldehyde()" class="Acetaldehyde" style="float: center">Acetaldehyde</button>
-    <button onclick="Acetate()" class="Acetate" style="float: right;">Ethyl Acetate</button>
+    <button onclick="Benzene()" class="Benzene" style="float: left;" id="benzenebtn">Benzene</button>
+    <button onclick="Acetaldehyde()" class="Acetaldehyde" style="float: center" id="acetaldehydebtn">Acetaldehyde</button>
+    <button onclick="Acetate()" class="Acetate" style="float: right;" id="acetatebtn">Ethyl Acetate</button>
   </div>
 </div>
     
@@ -46,9 +46,9 @@
 <div class="square" style="float: left;">Frequency Generator</div>
 <div class="square1" style="float: left;">Frequency Receiver</div>
    <br><br>
-<div class="tv" style="float: left;"></div>
+<div class="tv" style="float: left;">NORTH</div>
 <div class="flask" style="float: left;"> </div>
-<div class="tv" style="float: left;"></div>
+<div class="tv" style="float: left;">SOUTH</div>
 <div class="canvas">
 <svg width="250px" height="80px" >
   <defs>
@@ -61,7 +61,7 @@
 </svg>
 </div><!---for canvas-->
 
-<div class="button2" onclick="otherpage()" >Evaluate</div>
+<div class="button2" onclick="evalaute()" id="evaluatebutton" >Evaluate</div>
 </div>
 </div>
 <div style="border-left:2.5px dotted ;margin-left:600px;height:710px;width:0px;">
@@ -70,7 +70,7 @@
   <div class="centered" >
        <div class="rectangle" style="float: left;"> NORTH </div>
       <div class="canvas" style="float: center;">
-       	<div class="ball1"><i class="right1"></i></div>
+      	<div class="ball1"><i class="right1"></i></div>
  		<div class="ball2"><i class="right1"></i></div>
  		<div class="ball3"><i class="right1"></i></div><br><br>
  		<div class="ball4"><i class="right1"></i></div>
@@ -81,7 +81,7 @@
  		<div class="ball3"><i class="right1"></i></div><br><br>
     
    
- 		<svg width="250px" height="80px" >
+ 		<svg width="250px" height="80px">
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="#f00" />
@@ -104,6 +104,27 @@
 <script type="text/javascript" src="svgmagnetic.js"></script>   
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <script type="text/javascript" src="charts.js"></script>
+<script type="text/javascript">
+  function evalaute()
+  {
+
+    if(window.value=="1")
+      window.open("../../plot_benzene.html");
+    else if(window.value=="2")
+      window.open("../../plot_acetaldehyde.html");
+    else if(window.value=="3")
+      window.open("../../plot_ethylacetate.html");
+    else
+      alert("select an option");
+    
+
+
+
+
+}
+
+
+</script>
 
 
 </body>

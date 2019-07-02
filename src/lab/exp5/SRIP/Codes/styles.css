@@ -159,12 +159,14 @@ left:765px;
       width: 150px;
       height: 50px;
       margin: 10px 0;
-      background: grey;
+      background: #D3D3D3;
       border-radius: 50% / 10%;
       margin-left:60px;
-      color: white;
+      margin-top: 10px;
+      color: black;
       text-align: center;
       text-indent: .1em;
+
            
       
       
@@ -178,7 +180,7 @@ left:765px;
       left: -5%;
       background: inherit;
       border-radius: 5% / 50%;
-      margin-left:70px;
+      margin-left:120px;
       
 
     }
@@ -459,6 +461,11 @@ right1:before { content:''; position:absolute; height:100%; width:100%;  animati
 display: inline-block; }
 @keyframes rotate { 100% { transform:rotate(-360deg); } 
 }
+.left1 {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  display: inline-block;
+}
 
 .flask
 {
@@ -503,3 +510,8 @@ border:2px;
 @-webkit-keyframes orbit { 
 from { -webkit-transform:rotate(30deg) } 
 to { -webkit-transform:rotate(360deg) } }
+
+svg1
+{
+  margin-left: 150px;
+}
