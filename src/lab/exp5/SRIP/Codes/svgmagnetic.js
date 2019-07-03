@@ -49,7 +49,8 @@ function myMove1()
   } else {
     x.style.display = "block";
   }
-  toggletext1() 
+  toggletext1();
+  arrowstop();
 
 }
 function toggletext1() {
@@ -62,4 +63,15 @@ function toggletext1() {
   }
 }
 
- 
+function arrowstop()
+{
+ var i=document.getElementById("arrow bounce");
+ if (i.style.display === "none") {
+    i.style.display = "block";
+  } else {
+    i.style.display = "block";
+  }
+  
+
+
+}
