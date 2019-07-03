@@ -50,7 +50,7 @@ function myMove1()
     x.style.display = "block";
   }
   toggletext1();
-  arrowstop();
+  
 
 }
 function toggletext1() {
@@ -63,17 +63,3 @@ function toggletext1() {
   }
 }
 
-function arrowstop()
-{
- var i=document.getElementById("arrow");
- var v=1;
- 
- if (i.style.display === "none") {
-    document.write(v);
-  } else {
-    i.style.display = "block";
-  }
-  
-
-
-}
