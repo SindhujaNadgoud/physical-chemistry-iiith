@@ -65,9 +65,11 @@ function toggletext1() {
 
 function arrowstop()
 {
- var i=document.getElementById("arrow bounce");
+ var i=document.getElementById("arrow");
+ var v=1;
+ 
  if (i.style.display === "none") {
-    i.style.display = "block";
+    document.write(v);
   } else {
     i.style.display = "block";
   }
