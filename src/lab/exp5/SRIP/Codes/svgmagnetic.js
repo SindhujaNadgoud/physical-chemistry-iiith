@@ -1,4 +1,6 @@
 function myMove() {
+
+if(window.value=="1" || window.value=="2" || window.value=="3" ){
   var elem = document.getElementById("myAnimation");   
   var pos = 0;
   var id = setInterval(frame, .1);
@@ -17,9 +19,13 @@ function myMove() {
 
 toggle1();
 toggletext();
-
-
-  
+arrowstart1();
+evaluatebutton1();
+}
+  else
+  {
+    alert("Please select any option!");
+  }
 }
 
 
@@ -43,6 +49,7 @@ function toggletext() {
 }
 function myMove1()
 {
+  if(window.value=="1" || window.value=="2" || window.value=="3" ){
   var x = document.getElementById("line2");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -50,7 +57,13 @@ function myMove1()
     x.style.display = "block";
   }
   toggletext1();
-  
+  arrowstart2();
+
+  }
+  else
+  {
+    alert("Please select an option");
+  }
 
 }
 function toggletext1() {
@@ -63,3 +76,34 @@ function toggletext1() {
   }
 }
 
+function arrowstart1()
+{
+   var x = document.getElementById("arrow1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "block";
+  }
+
+
+}
+
+function arrowstart2()
+{
+   var x = document.getElementById("arrowAnim");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "block";
+  }
+
+
+}
+function evaluatebutton1() {
+  var x = document.getElementById("evaluatebutton");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "block";
+  }
+}

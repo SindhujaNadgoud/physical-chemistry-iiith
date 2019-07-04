@@ -7,6 +7,7 @@ function Benzene() {
     document.getElementById("ttcontent").style.background="#DC143C";
     window.value=1;
     
+    
 }
 function Acetaldehyde() {
 
