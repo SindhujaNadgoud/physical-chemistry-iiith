@@ -98,8 +98,8 @@ left:765px;
     border: none;
     border-radius: 10px;
     box-shadow: 0 2px #999;
-  margin-left:300px;
-  display: inline-block;
+  margin-left:20px;
+ 
         }
 
 
@@ -312,7 +312,7 @@ left:765px;
 .square
 {
 	height: 50px;
-  width: 68px;
+  width: 100px;
   background-color: rgb(128,128,128,0.3);
   text-align: center;
   text-indent: center;
@@ -321,7 +321,7 @@ left:765px;
 .square1
 {
 	height: 50px;
-  width: 68px;
+  width: 100px;
   background-color: rgb(128,128,128,0.3);
   text-align: center;
   text-indent: center;
