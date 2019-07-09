@@ -12,7 +12,7 @@
 /* Control the left side */
    
 .left {
-  left: 160px;
+  left: 165px;
 top:10px;
 
   background-color:white;
@@ -157,8 +157,8 @@ left:765px;
 
     .tv {
       position: relative;
-      width: 150px;
-      height: 50px;
+      width: 25%;
+      height: 5%;
       margin: 10px 0;
       background: #D3D3D3;
       border-radius: 50% / 10%;
